@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>exam</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <h1>统一建模语言理论测试</h1>
+    <p><span>考试科目：统一建模语言</span><span style="margin-left: 17px;">时间：100分钟</span>
+        <span style="margin-left: 73px;">得分：</span><span id="score"></span></p>
+    <p><span>班级：&nbsp;<input id="class">&nbsp;</span><span>学号：<input id="idNumber">&nbsp;</span>姓名：<input id="name"><span></span></p>
+    <div>
+        <h2>一、填空题（每空5分，共20分）</h2>
+        <p>1,UML的中文全称是：<input id="question1"></p>
+        <p>2,对象最突出的特征是：<input id="question2FirstFilling">&nbsp;<input id="question2SecondFilling">&nbsp;<input id="question2ThirdFilling"></p>
+    </div>
+    <div>
+        <h2>二、选择题（每空10分，共20分）</h2>
+        <p>1,UML与软件工程对关系是：</p>
+        <input type="radio" name="question3" value="A" class="marg">(A)UNL就是软件工程<br>
+        <input type="radio" name="question3" value="B" class="marg">(B)UNL参与到软件工程中软件开发过程的几个阶段</br>
+        <input type="radio" name="question3" value="C" class="marg">(C)UNL与软件工程无关</br>
+        <input type="radio" name="question3" value="D" class="marg">(D)UNL是软件工程的一部分</br>
+    </div>
+    <div>
+        <p>2,java语言支持：</p>
+        <input type="radio" name="question4" value="A" class="marg">(A)单继承</br>
+        <input type="radio" name="question4" value="B" class="marg">(B)多继承</br>
+        <input type="radio" name="question4" value="C" class="marg">(C)单继承和多继承都支持</br>
+        <input type="radio" name="question4" value="D" class="marg">(D)单继承和多继承都不支持</br>
+    </div>
+    <h2>三、多选题（每空10分，共20分）</h2>
+    <div>
+        <p>1,用例的粒度分为以下的哪三种：</p>
+        <input type="checkbox" name="question5" value="A" class="marg">(A)概述级</br>
+        <input type="checkbox" name="question5" value="B" class="marg">(B)需求级</br>
+        <input type="checkbox" name="question5" value="C" class="marg">(C)用户目标级</br>
+        <input type="checkbox" name="question5" value="D" class="marg">(D)子功能级</br>
+    </div>
+    <div>
+        <p>2,java语言支持：</p>
+        <input type="checkbox" name="question6" value="A" class="marg">(A)名称(Name)</br>
+        <input type="checkbox" name="question6" value="B" class="marg">(B)属性(Attribute)</br>
+        <input type="checkbox" name="question6" value="C" class="marg">(C)操作(Operation)</br>
+        <input type="checkbox" name="question6" value="D" class="marg">(D)方法(Function)</br>
+    </div>
+    <div>
+        <h2>四、判断题（每空10分，共20分）</h2>
+        <p>1,用例图只是用于和客户交流和沟通用的，用于确定需求。
+            <input type="radio" name="judge1" value="right">√
+            <input type="radio" name="judge1" value="wrong">x
+        </p>
+        <p>1,在状态图中，终止状态在一个状态图中允许有任意多个。
+            <input type="radio" name="judge2" value="right">√
+            <input type="radio" name="judge2" value="wrong">x
+        </p>
+    </div>
+    <div>
+        <h2>五、简答题（每题20分，共20分）</h2>
+        <p>1,简述什么是模型以及模型的表现形式？</br>
+            <textarea id='lastQuestion' value='answer'></textarea>
+        </p>
+    </div>
+    <button onclick="calculateScore()">计算分数</button>
+</body>
+
+</html>
